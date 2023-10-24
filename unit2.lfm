@@ -1,0 +1,169 @@
+object frm_Menu: Tfrm_Menu
+  Left = 667
+  Height = 638
+  Top = 145
+  Width = 1106
+  Caption = 'Gestão de Demanda Contratada V.08'
+  ClientHeight = 638
+  ClientWidth = 1106
+  OnClose = FormClose
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 588
+    Width = 1106
+    Align = alBottom
+    BevelColor = clYellow
+    Caption = 'Panel1'
+    Color = clYellow
+    ParentColor = False
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 966
+    Height = 588
+    Top = 0
+    Width = 140
+    Align = alRight
+    ClientHeight = 588
+    ClientWidth = 140
+    Color = clInactiveCaption
+    ParentColor = False
+    TabOrder = 1
+    object btn_Cliente: TButton
+      Left = 8
+      Height = 50
+      Top = 90
+      Width = 120
+      Caption = 'Cliente'
+      OnClick = btn_ClienteClick
+      TabOrder = 0
+    end
+    object btn_CartaDemanda: TButton
+      Left = 8
+      Height = 50
+      Top = 150
+      Width = 120
+      Caption = '&Carta Demanada'
+      OnClick = btn_CartaDemandaClick
+      TabOrder = 1
+    end
+    object tbn_Resolucao2: TButton
+      Left = 8
+      Height = 50
+      Top = 270
+      Width = 120
+      Caption = 'Resolução 1000'
+      OnClick = tbn_Resolucao2Click
+      TabOrder = 2
+    end
+    object Lixo: TButton
+      Left = 8
+      Height = 50
+      Top = 210
+      Width = 120
+      Caption = 'Lixo'
+      OnClick = LixoClick
+      TabOrder = 3
+    end
+    object Button5: TButton
+      Left = 8
+      Height = 50
+      Top = 330
+      Width = 120
+      Caption = 'Button5'
+      OnClick = Button5Click
+      TabOrder = 4
+    end
+    object Button6: TButton
+      Left = 8
+      Height = 50
+      Top = 390
+      Width = 120
+      Caption = '&Sair'
+      OnClick = Button6Click
+      TabOrder = 5
+    end
+    object Button7: TButton
+      Left = 16
+      Height = 25
+      Top = 16
+      Width = 75
+      Caption = 'Button7'
+      OnClick = Button7Click
+      TabOrder = 6
+    end
+    object Button8: TButton
+      Left = 24
+      Height = 25
+      Top = 54
+      Width = 75
+      Caption = 'Button8'
+      OnClick = Button8Click
+      TabOrder = 7
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 588
+    Top = 0
+    Width = 966
+    ActivePage = Documentacao
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 2
+    object Cliente: TTabSheet
+      Caption = 'Cliente'
+      ClientHeight = 560
+      ClientWidth = 958
+      object Panel3: TPanel
+        Left = 0
+        Height = 34
+        Top = 0
+        Width = 958
+        Align = alTop
+        BevelColor = clSkyBlue
+        BevelInner = bvRaised
+        Caption = 'Dados do Cliente'
+        Color = clActiveCaption
+        ParentColor = False
+        TabOrder = 0
+      end
+    end
+    object Documentacao: TTabSheet
+      Caption = 'Documentação'
+      ClientHeight = 560
+      ClientWidth = 958
+      object GeckoBrowser1: TGeckoBrowser
+        Left = 0
+        Height = 526
+        Top = 34
+        Width = 958
+        Align = alClient
+        TabOrder = 0
+        TabStop = False
+        DisableJavaScript = False
+        Prompt = GeckoPrompt1
+      end
+      object Panel4: TPanel
+        Left = 0
+        Height = 34
+        Top = 0
+        Width = 958
+        Align = alTop
+        BevelColor = 8454016
+        BevelInner = bvRaised
+        Caption = 'Documentação'
+        Color = 8454143
+        ParentColor = False
+        TabOrder = 1
+        OnClick = Panel4Click
+      end
+    end
+  end
+  object GeckoPrompt1: TGeckoPrompt
+    Left = 1016
+    Top = 504
+  end
+end
